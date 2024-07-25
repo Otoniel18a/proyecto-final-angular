@@ -1,0 +1,20 @@
+<header>
+    <div class="container">
+      <div class="logo">
+        <img src="https://www.trabajo.gob.hn/wp-content/uploads/2023/11/cropped-cropped-314512310_489364863225936_2015983967601765690_n.png" alt="Logo de la SETRASS">
+      </div>
+      <nav class="nav">
+        <ul [class.active]="menuActive">
+          <li><a class="nav-link" routerLink="/index">Inicio</a></li>
+          <li><a class="nav-link" routerLink="/nosotros">Quienes somos</a></li>
+          <li><a class="nav-link" routerLink="/contacto">Contacto</a></li>
+        </ul>
+        <button class="nav-toggle" (click)="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+  
